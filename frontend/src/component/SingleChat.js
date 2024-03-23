@@ -24,8 +24,8 @@ var socket, selectedChatCompare;
 function SingleChat({ fetchAgain, setFetchAgain }) {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [newMessage, setNewMessage] = useState();
-  const [socketConnected, setSocketConnected] = useState(true);
+  const [newMessage, setNewMessage] = useState("");
+  const [socketConnected, setSocketConnected] = useState(false);
   const { user, selectedChat, setSelectedChat, notification, setNotification } =
     ChatState();
   const toast = useToast();
@@ -38,6 +38,7 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
     socket.on("connected", () => setSocketConnected(true));
     socket.on("typing", () => setisTyping(true));
     socket.on("stop typing", () => setisTyping(false));
+    // eslint-disable-next-line
   }, []);
 
   const fetchMessages = async () => {
@@ -72,7 +73,9 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
   useEffect(() => {
     fetchMessages();
     selectedChatCompare = selectedChat;
+    // eslint-disable-next-line
   }, [selectedChat]);
+
   useEffect(() => {
     socket.on("message recieved", (newMessageRecieved) => {
       if (
