@@ -17,9 +17,9 @@ export const HomePage = () => {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("userInfo"));
-    // if (!user) {
-    //   navigate("/");
-    // }
+    if (!user) {
+      navigate("/");
+    }
     if (user) {
       navigate("/chats");
     }

@@ -101,6 +101,7 @@ function Login() {
       <Button
         width="100%"
         color="black"
+        backgroundColor="blue"
         style={{ marginTop: 15 }}
         onClick={submitHandler}
         isLoading={loading}
@@ -109,6 +110,7 @@ function Login() {
       </Button>
       <Button
         variant="solid"
+        backgroundColor="red"
         width="100%"
         onClick={() => {
           setEmail("guest@example.com");

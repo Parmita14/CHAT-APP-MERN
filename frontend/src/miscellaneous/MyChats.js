@@ -7,7 +7,8 @@ import ChatLoading from "./ChatLoading";
 import { getSender } from "../config/ChatLogics";
 import GroupChatModal from "./GroupChatModal";
 
-function MyChats({ fetchAgain }) {
+function MyChats(props) {
+  const { fetchAgain } = props;
   const [loggedUSer, setLoggedUser] = useState();
   const { selectedChat, setSelectedChat, user, chats, setChats } = ChatState();
   const toast = useToast();

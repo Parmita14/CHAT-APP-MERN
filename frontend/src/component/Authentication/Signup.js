@@ -192,7 +192,7 @@ function Signup() {
         />
       </FormControl>
       <Button
-        // colorScheme="blue"
+        backgroundColor="blue"
         width="100%"
         style={{ marginTop: 15 }}
         onClick={submitHandler}

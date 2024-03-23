@@ -207,7 +207,7 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
               {isTyping ? <div>Typing...</div> : <></>}
               <Input
                 variant="filled"
-                bg="#E0E0E0"
+                backgroundColor="#E0E0E0"
                 placeholder="Enter a Messages.."
                 onChange={typingHandler}
                 value={newMessage}

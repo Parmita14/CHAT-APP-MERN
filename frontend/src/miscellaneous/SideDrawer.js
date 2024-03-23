@@ -124,7 +124,7 @@ export default function SideDrawer() {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        bg="whitesmoke"
+        backgroundColor="whitesmoke"
       >
         <Tooltip label="Search users to chat" hasArrow placement="bottom-end">
           <Button variant="ghost" onClick={onOpen}>
