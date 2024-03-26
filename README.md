@@ -5,7 +5,7 @@ This application allows one-one and group chat in real time using socket.io.<br/
 <b>Also used : Chakra UI,Cloudinary</b><br>
 <b>Link : https://chat-app-mern-3-hxgx.onrender.com/ </b>
 <hr>
-<b>Table of contents</b>
+<h1><b>Table of contents</b></h1>
 <ul>
   <li>UI-screenshots</li>
   <li>Folder Structure</li>
